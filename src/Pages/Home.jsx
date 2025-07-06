@@ -8,7 +8,7 @@ function Home() {
     <div className='m-0 p-0 overflow-x-hidden'>
       <Header />
       <Hero />
-      <Rooms />
+      <Rooms/>
     </div>
   );
 }
