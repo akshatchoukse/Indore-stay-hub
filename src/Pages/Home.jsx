@@ -1,12 +1,16 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React from 'react';
 import Header from '../Components/Header';
+import Hero from '../Components/Hero';
+import Rooms from '../Components/Rooms';
+
 function Home() {
   return (
-    <div>
-        <Header></Header>
+    <div className='m-0 p-0 overflow-x-hidden'>
+      <Header />
+      <Hero />
+      <Rooms />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
