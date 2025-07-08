@@ -2,14 +2,23 @@ import React from 'react';
 import Header from '../Components/Header';
 import Hero from '../Components/Hero';
 import Rooms from '../Components/Rooms';
+import Farmhouse from '../Components/Facility/Farmhouse';
+import CastleInn from '../Components/Facility/CastleInn';
+import CasaInn from '../Components/Facility/CasaInn';
+import SaffronInn from '../Components/Facility/SaffronInn';
+import Gallery from '../Components/Gallery';
 
 function Home() {
   return (
     <div className='m-0 p-0 overflow-x-hidden'>
-      <Header />
-      <Hero />
+      <Header/>
+      <Hero/>
       <Rooms/>
-    </div>
+      <Farmhouse/>
+      <CastleInn/>
+      <CasaInn/>
+      <SaffronInn/>
+         </div>
   );
 }
 
