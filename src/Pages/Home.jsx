@@ -6,7 +6,6 @@ import Farmhouse from '../Components/Facility/Farmhouse';
 import CastleInn from '../Components/Facility/CastleInn';
 import CasaInn from '../Components/Facility/CasaInn';
 import SaffronInn from '../Components/Facility/SaffronInn';
-import Gallery from '../Components/Gallery';
 import Footer from '../Components/Footer';
 
 function Home() {

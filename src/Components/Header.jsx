@@ -33,7 +33,7 @@ function Header() {
           <BedDouble size={16} />
           Our Properties
         </div>
-        <div className="cursor-pointer hover:text-gray-500 hidden sm:flex items-center gap-1">
+        <div onClick={()=> navigate('/gallery')} className="cursor-pointer hover:text-gray-500 hidden sm:flex items-center gap-1">
           <Image size={16} />
           Gallery
         </div>
