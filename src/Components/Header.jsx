@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { BedDouble, Image, Phone, Info } from 'lucide-react';
 
 function Header() {
@@ -19,6 +20,7 @@ function Header() {
     window.addEventListener('scroll', controlHeader);
     return () => window.removeEventListener('scroll', controlHeader);
   }, [lastScrollY]);
+  let navigate = useNavigate()
 
   return (
     <div
@@ -27,7 +29,7 @@ function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto gap-15 flex items-center justify-between h-full z-10 px-6 sm:px-12 md:px-20 lg:px-32 text-[13px] font-serif text-gray-700">
-        <div className="cursor-pointer hover:text-gray-500 hidden sm:flex items-center gap-1">
+        <div onClick={()=> navigate("/our-properties")} className="cursor-pointer hover:text-gray-500 hidden sm:flex items-center gap-1">
           <BedDouble size={16} />
           Our Properties
         </div>
